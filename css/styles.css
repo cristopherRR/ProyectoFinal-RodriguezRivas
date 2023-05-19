@@ -250,3 +250,25 @@ footer {
 .galeria-img:hover img {
     transform: scale(0.96);
 }
+
+.galeria-img1 {
+    flex-direction: column;
+    text-align: center;
+}
+
+.galeria-img1 img {
+    width: 180px;
+    margin: 20px;
+    justify-content: space-around;
+}
+
+.galeria-img2 {
+    background-color: rgb(226, 83, 0);
+    text-align: center;
+}
+
+.galeria-img2 img {
+    width: 180px;
+    margin: 20px;
+    justify-content: space-around;
+}

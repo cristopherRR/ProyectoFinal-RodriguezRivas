@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+    font-family:'Barlow Semi Condensed', sans-serif;
+}
+
+.index {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/fondoRe.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+header {
+    background-color: rgb(226, 83, 0);
+}
+.logo img {
+    width: 55px;
+}
+
+.menu  li{
+    padding: 0px 20px;
+    color: white;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    color: rgb(177, 111, 54);
+    transition: 0.9s;
+}
+
+
+.titulo {
+    letter-spacing: 5px;
+    color: white;
+}
+
+.header-main {
+    min-height: 70vh;
+}
+
+.nosotros {
+    min-height: 35vh;
+    background-color: rgb(226, 83, 0);
+    text-align: center;
+    justify-content: center;
+}
+
+h2 {
+    color: white;
+    font-size: 35px;
+    padding-top: 15px;
+}
+
+.p-index {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-top: 15px;
+    width: 70%;
+}
+
+hr {
+    margin-top: 25px;
+    color: white;
+}
+
+.imgn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imgn img {
+    width: 150px;
+    margin: 10px 30px 0 30px;
+}
+
+h4 {
+    text-align: right;
+    padding: 15px;
+}
+
+footer {
+    background-color: black;
+}
+
+.pie-pagina {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
+    text-align: center;
+}
+
+.pie-pagina .box img {
+    width: 150px;
+    margin: 30px;
+}
+
+.pie-pagina .box h2 {
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.pie-pagina .red-social a {
+    font-size: 25px;
+    align-items:center ;
+    margin: 20px;
+}
+.pie-pagina .red-social a:hover {
+    color: rgb(177, 111, 54);
+}
+
+@media only screen and (max-width: 762px) {
+    .pie-pagina {
+        display: block;
+        grid-area: foter;
+        align-items: center;
+        text-align: center;
+        padding: 0px;
+    }
+}
+
+.p-nosotros {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    margin-top: 15px;
+    text-align: center;
+    min-height: 27vh;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.p-nosotros h2 {
+    text-align: center;
+    color: black;
+}
+
+.p-nosotros p {
+    display: inline-block;
+    width: 75%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.p2-nosotros {
+    background-color: rgb(226, 83, 0);
+    min-height: 35vh;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.p2-nosotros p {
+    display: inline-block;
+    color: white;
+    width: 70%;
+    font-size: 25px;
+}
+
+.sec-clients a {
+    transition: filter 0.4s;
+}
+
+.sec-clients a:hover {
+    filter: opacity(0.5);
+}
+
+.p2-nosotros div img {
+    width: 98px;
+    margin: 15px;
+}
+
+.ubicacion {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.ubicacion div h2 {
+    color: black;
+    padding-bottom: 25px;
+}
+
+.direccion p {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.red-social2 a{
+    color: black;
+    font-size: 25px;
+    align-items:center;
+    margin: 20px;
+}
+
+.red-social2 a:hover {
+    color: rgb(177, 111, 54);
+}
+
+.mensaje form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(226, 83, 0);
+}
+
+.mensaje form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+.mensaje form div label {
+    color: white;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 762px) {
+    .ubicacion {
+        display: block;
+        text-align: center;
+        padding: 40px;
+    }
+}
+
+.galeria h2 {
+    color: black;
+    text-align: center;
+}
+
+.galeria-img img {
+    transition: 0.4s transform;
+}
+
+.galeria-img:hover img {
+    transform: scale(0.96);
+}

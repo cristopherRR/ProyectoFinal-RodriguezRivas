@@ -1,0 +1,21 @@
+.contenedor-galeria {
+    padding: 25px;
+    background-color: $color-principal1;
+}
+
+.galeria {
+    h2 {
+        color: $color-principal3;
+        text-align: center;
+    }
+    .galeria-img {
+        &:hover {
+            transform: scale(0.96);
+            transition: 0.10s transform;
+        }
+    }
+}
+
+.galeria-2 {
+    @extend .galeria;
+}

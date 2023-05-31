@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+    font-family:'Barlow Semi Condensed', sans-serif;
+}
+
+.index {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/fondoRe.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .logo {
+        img {
+            width: 55px;
+        }
+    }
+    nav {
+        .navbar-nav {
+            a {
+                @include hover;
+            }
+        }
+    }
+    .titulo {
+        letter-spacing: 5px;
+        color: $color-principal3;
+        .header-main {
+            min-height: 70vh;
+        }
+    }
+}
+
+.seccion-nosotros {
+    min-height: 35vh;
+    background-color: $color-principal1;
+    text-align: center;
+    justify-content: center;
+    border: solid 2px $color-principal1;
+    h2 {
+        color: $color-principal3;
+        font-size: 35px;
+        padding-top: 15px;
+    }
+    p {
+        @include medidas-parrafos;
+    }
+    hr {
+        margin-top: 25px;
+        color: $color-principal3;
+    }
+    .imgn {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        img {
+            width: 150px;
+            margin: 10px 30px 0 30px;
+        }
+    }
+    h4 {
+        text-align: right;
+        padding: 15px;
+        a {
+            @include hover;
+        }
+    }
+}
+
+footer {
+    background-color: $color-prnicipal2;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
+    text-align: center;
+    a {
+        @include hover;
+    }
+    .box {
+        img {
+            width: 150px;
+            margin: 30px;
+        }
+    }
+    .box {
+        h2 {
+            font-size: 25px;
+            color: $color-principal3;
+        }
+    }
+    .red-social {
+        a {
+            font-size: 25px;
+            margin: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 762px) {
+    .pie-pagina {
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+    .seccion-nosotros {
+        p {
+            width: 95%;
+        }
+    }
+}
+

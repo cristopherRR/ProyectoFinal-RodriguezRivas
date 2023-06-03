@@ -244,6 +244,10 @@ footer .red-social a {
     padding: 40px;
   }
 }
+body {
+  background-color: rgb(226, 83, 0);
+}
+
 .contenedor-galeria {
   padding: 25px;
   background-color: rgb(226, 83, 0);
@@ -263,7 +267,7 @@ footer .red-social a {
 }
 .productos-p .row {
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .productos-p .row .card {
   text-align: center;
@@ -278,6 +282,20 @@ footer .red-social a {
   background-color: rgb(226, 83, 0);
 }
 .productos-p .row .card .card-body .btn:hover {
+  color: rgb(177, 111, 54);
+  transition: 0.9s;
+}
+.productos-p .catalogo-completo {
+  margin-top: 15px;
+}
+.productos-p .catalogo-completo:hover {
+  transform: scale(0.96);
+  transition: 0.4s transform;
+}
+.productos-p .catalogo-completo .card-body .btn {
+  background-color: rgb(226, 83, 0);
+}
+.productos-p .catalogo-completo .card-body .btn:hover {
   color: rgb(177, 111, 54);
   transition: 0.9s;
 }

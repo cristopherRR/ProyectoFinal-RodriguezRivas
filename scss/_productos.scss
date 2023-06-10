@@ -1,12 +1,30 @@
 .productos-p {
     background-color: $color-principal1;
+    .carrusel {
+        .carousel{
+            .carousel-inner {
+                .d-item {
+                    height: 600px;
+                    .d-img{
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .productos-p2 {
+        .catalogo-completo {
+        margin-top: 25px
+        }
+    }
     .row {
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        margin-top: 20px;
         .card {
             text-align: center;
             padding-top: 10px;
-            margin: 10px;
+            margin: 20px;
             &:hover {
                 transform: scale(0.96);
                 transition: 0.40s transform;
@@ -34,6 +52,23 @@
                 &:hover {
                     color: $color-hover;
                     transition: 0.9s;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 762px) {
+    .productos-p {
+        .carrusel {
+            .carousel{
+                .carousel-inner {
+                    .d-item {
+                        height: 100%;
+                        .d-img{
+                            height: 100%;
+                        }
+                    }
                 }
             }
         }

@@ -65,22 +65,23 @@
         </div>
     </section>
     <section class="mensaje">
-        <form action="form">
-            <div>
-                <label for="nomb">Nombre y Apellido</label>
-                <input type="text" name="Nombre" id="nomb">
-            </div>
-            <div>
-                <label for="cor">Correo Electronico</label>
-                <input type="email" name="" id="cor">
-            </div>
-            <div>
-                <label for="tex">Consulta</label>
-                <textarea name="" id="tex" cols="30" rows="10"></textarea>
-            </div>
-            <div>
-                <button>Enviar</button>
-            </div>
+        <form action="row form">
+            <div class="col">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="col">
+                <label for="exampleFormControlInput1" class="form-label">Nombre y apellido</label>
+                <input type="text" class="form-control" placeholder="name" aria-label="name">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Deja tu consulta</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje"></textarea>
+              </div>
+              <div class="boton">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+              </div>
+            
         </form>
     </section>
     <footer class="pie-pagina">

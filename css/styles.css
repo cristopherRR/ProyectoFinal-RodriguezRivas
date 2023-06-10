@@ -220,21 +220,28 @@ footer .red-social a {
 .mensaje form {
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   padding-top: 15px;
   background-color: white;
 }
 .mensaje form div {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 15px;
   width: 80%;
 }
 .mensaje form div label {
   color: black;
   font-size: 20px;
+}
+.mensaje form .boton {
+  text-align: center;
+}
+.mensaje form .boton .btn {
+  background-color: rgb(226, 83, 0);
+}
+.mensaje form .boton .btn:hover {
+  color: rgb(177, 111, 54);
+  transition: 0.9s;
 }
 
 @media only screen and (max-width: 762px) {
@@ -265,14 +272,24 @@ body {
 .productos-p {
   background-color: rgb(226, 83, 0);
 }
+.productos-p .carrusel .carousel .carousel-inner .d-item {
+  height: 600px;
+}
+.productos-p .carrusel .carousel .carousel-inner .d-item .d-img {
+  height: 100%;
+}
+.productos-p .productos-p2 .catalogo-completo {
+  margin-top: 25px;
+}
 .productos-p .row {
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  margin-top: 20px;
 }
 .productos-p .row .card {
   text-align: center;
   padding-top: 10px;
-  margin: 10px;
+  margin: 20px;
 }
 .productos-p .row .card:hover {
   transform: scale(0.96);
@@ -298,6 +315,15 @@ body {
 .productos-p .catalogo-completo .card-body .btn:hover {
   color: rgb(177, 111, 54);
   transition: 0.9s;
+}
+
+@media only screen and (max-width: 762px) {
+  .productos-p .carrusel .carousel .carousel-inner .d-item {
+    height: 100%;
+  }
+  .productos-p .carrusel .carousel .carousel-inner .d-item .d-img {
+    height: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

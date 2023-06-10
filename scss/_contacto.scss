@@ -35,19 +35,26 @@
     form {
         position: relative;
         display: flex;
-        justify-content: center;
         align-items: center;
         flex-direction: column;
         padding-top: 15px;
         background-color: $color-principal3;
         div {
-            display: flex;
-            flex-direction: column;
             margin-bottom: 15px;
             width: 80%;
             label {
                 color: $color-prnicipal2;
                 font-size: 20px;
+            }
+        }
+        .boton {
+            text-align: center;
+            .btn {
+                background-color: $color-principal1;
+                    &:hover {
+                        color: $color-hover;
+                        transition: 0.9s;
+                    }
             }
         }
     }
